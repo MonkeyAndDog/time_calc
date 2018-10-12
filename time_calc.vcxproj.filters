@@ -21,9 +21,21 @@
     <ClCompile Include="core\timer.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="core\cmd_util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="core\file_util.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="core\file_util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="core\cmd_util.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

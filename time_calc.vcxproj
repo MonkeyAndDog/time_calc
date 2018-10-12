@@ -163,10 +163,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="core\cmd_util.c" />
+    <ClCompile Include="core\file_util.c" />
+    <ClCompile Include="core\file_util.h" />
     <ClCompile Include="main.c" />
     <ClCompile Include="core\timer.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="core\cmd_util.h" />
     <ClInclude Include="core\timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
