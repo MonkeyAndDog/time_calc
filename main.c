@@ -2,7 +2,7 @@
 * (C) HuXiaozhong 2018
 */
 #include <stdio.h>
-#include "timer.h"
+#include "core\timer.h"
 
 void init_sys(void);
 
@@ -19,4 +19,6 @@ int main() {
 void init_sys(void) {
 	printf("\tTime Calculator\n [ GNU General Public License v3.0] On Windows 2018 \n");
 	printf(" The GNU General Public License is a free, copyleft license for software and other kinds of works.\n\n");
+	printf(" Enter Ctrl + C to exit.\n\n");
+	printf(" -------------------------------------------------------------------------------------------------\n\n");
 }

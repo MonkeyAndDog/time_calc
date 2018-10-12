@@ -20,6 +20,9 @@ void timer_output(Timer *timer) {
 	(*timer).machine_time = 1.0 / (*timer).fp * 12;
 	(*timer).need_time /= (*timer).machine_time;
 	(*timer).time = 65536 - (*timer).need_time;
-	printf("THX:%x\t", ((*timer).time & 0xFF00) >> 8);
-	printf("TLX:%x\n\n", (*timer).time & 0xFF);
+	printf("+------+-------+\n");
+	printf("|THX   |TLX    |\n");
+	printf("+------+-------+\n");
+	printf("|%x    |%x     |\n", ((*timer).time & 0xFF00) >> 8, (*timer).time & 0xFF);
+	printf("+------+-------+\n\n");
 }

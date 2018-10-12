@@ -17,6 +17,7 @@
 [Rr]eleases/
 x64/
 x86/
+Debug_x32
 bld/
 [Bb]in/
 [Oo]bj/
