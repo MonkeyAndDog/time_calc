@@ -49,5 +49,5 @@ typedef struct {
     string SECT_EXEC;
 } Code_Template;
 
-void init_code(Code_Template *code);
+void init_code(Code_Template &code);
 void write_code(string file_name, int THX, int TLX);

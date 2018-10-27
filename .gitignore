@@ -264,3 +264,5 @@ __pycache__/
 CMakeFiles/
 cmake-build-debug/
 cmake-build-release/
+cmake-build-debug_x86/
+cmake-build-release_x86_64/

@@ -26,12 +26,12 @@ void timer_output(Timer &timer) {
     timer.time = 65536 - timer.need_time;
     int THX = timer.time >> 8;
     int TLX = timer.time & 0xFF;
-    printf("+------+-------+\n");
-    printf("|THX   |TLX    |\n");
-    printf("+------+-------+\n");
-    printf("|%x    |%x     |\n", THX, TLX);
-    printf("+------+-------+\n");
+    cout << "+------+-------+\n";
+    cout << "|THX   |TLX    |\n";
+    cout << "+------+-------+\n";
+    cout << "|" << THX << "\t|" << TLX << "\t|\n";
+    cout << "+------+-------+\n";
     string file_name("code.asm");
     write_code(file_name, THX, TLX);
-    printf("程序已在当前目录下生成。\n\n");
+    cout << "程序已在当前目录下生成。\n\n";
 }
