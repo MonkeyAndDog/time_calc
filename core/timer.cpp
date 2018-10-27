@@ -29,7 +29,7 @@ void timer_output(Timer &timer) {
     cout << "+------+-------+\n";
     cout << "|THX   |TLX    |\n";
     cout << "+------+-------+\n";
-    cout << "|" << THX << "\t|" << TLX << "\t|\n";
+    cout << "|" << hex << THX << "\t|" << hex << TLX << "\t|\n";
     cout << "+------+-------+\n";
     string file_name("code.asm");
     write_code(file_name, THX, TLX);
