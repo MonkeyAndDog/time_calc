@@ -1,13 +1,14 @@
+
 /*
 * (C) HuXiaozhong 2018
-* ≥Ã–Úƒ£∞Â∂¡–¥π§æﬂºØ
-* ≤Œøº≥Ã–Ú£∫
-* 
+* Á®ãÂ∫èÊ®°ÊùøËØªÂÜôÂ∑•ÂÖ∑ÈõÜ
+* ÂèÇËÄÉÁ®ãÂ∫èÔºö
+*
 ORG 0000H
 	LJMP MAIN
 ORG 000BH
 	LJMP TIMER_0
-	
+
 ORG 2000H
 	MAIN:
 	MOV TMOD, #01H
@@ -32,14 +33,21 @@ ORG 2100H
 EXEC:RETI
 END
 */
-#include <stdio.h>
+#include <string>
+#ifndef TIME_CALC_FILE_UTIL_H
+#define TIME_CALC_FILE_UTIL_H
+
+#endif //TIME_CALC_FILE_UTIL_H
+
+using namespace std;
+
 typedef struct {
-	char *SECT_HEADER;
-	char *SECT_HEADER_1;
-	char *SECT_HEADER_2;
-	char *SECT_INT;
-	char *SECT_EXEC;
+    string SECT_HEADER;
+    string SECT_HEADER_1;
+    string SECT_HEADER_2;
+    string SECT_INT;
+    string SECT_EXEC;
 } Code_Template;
 
 void init_code(Code_Template *code);
-void write_code(char* file_name, int THX, int TLX);
+void write_code(string file_name, int THX, int TLX);

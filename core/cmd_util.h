@@ -1,12 +1,15 @@
 /*
 * (C) HuXiaozhong 2018
-* ¿ØÖÆÌ¨ÃüÁî¶ÁÈ¡¼°Ğ´Èë¹¤¾ß¼¯
-* ¼òµ¥µÄÊµÏÖ£¬²»´¦Àí¸´ÔÓÊäÈëÄÚÈİ
+* æ§åˆ¶å°å‘½ä»¤è¯»å–åŠå†™å…¥å·¥å…·é›†
+* ç®€å•çš„å®ç°ï¼Œä¸å¤„ç†å¤æ‚è¾“å…¥å†…å®¹
 */
-#include <stdio.h>
+#ifndef TIME_CALC_CMD_UTIL_H
+#define TIME_CALC_CMD_UTIL_H
 
-int read_int(void);
+#endif //TIME_CALC_CMD_UTIL_H
 
-float read_float(void);
+int read_int();
 
-short read_short(void);
+float read_float();
+
+short read_short();

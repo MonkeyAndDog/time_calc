@@ -1,27 +1,33 @@
 /*
 * (C) HuXiaozhong 2018
 *
-* ¶¨Ê±Æ÷Êı¾İ½á¹¹
-* time_mode£º¶¨Ê±Æ÷Ä£Ê½
-* need_time£ºËùĞè¼ÆÊ±Ê±¼ä£¬µ¥Î»£¨MS£©
-* machine_time£ºÎ¢»ú»úÆ÷ÖÜÆÚ£¨uS£©
-* fp£º¾§ÕñÆµÂÊ£¨MHZ£©
-* time£º¶¨Ê±Æ÷¸ßÎ»ºÍµÍÎ»×é³ÉµÄËÄ×Ö½ÚÊı¾İ
+* å®šæ—¶å™¨æ•°æ®ç»“æ„
+* time_modeï¼šå®šæ—¶å™¨æ¨¡å¼
+* need_timeï¼šæ‰€éœ€è®¡æ—¶æ—¶é—´ï¼Œå•ä½ï¼ˆMSï¼‰
+* machine_timeï¼šå¾®æœºæœºå™¨å‘¨æœŸï¼ˆuSï¼‰
+* fpï¼šæ™¶æŒ¯é¢‘ç‡ï¼ˆMHZï¼‰
+* timeï¼šå®šæ—¶å™¨é«˜ä½å’Œä½ä½ç»„æˆçš„å››å­—èŠ‚æ•°æ®
 */
+
+#ifndef TIME_CALC_TIME_H
+#define TIME_CALC_TIME_H
+
+#endif //TIME_CALC_TIME_H
+
 typedef struct {
-	short time_mode;
-	short need_time;
-	float fp;
-	float machine_time;
-	int time;
+    short time_mode;
+    short need_time;
+    float fp;
+    float machine_time;
+    int time;
 } Timer;
 
 /*
-* ³õÊ¼»¯¼ÆÊıÆ÷/¶¨Ê±Æ÷¸÷Ïî²ÎÊı
+* åˆå§‹åŒ–è®¡æ•°å™¨/å®šæ—¶å™¨å„é¡¹å‚æ•°
 */
-void init_timer(Timer *timer);
+void init_timer(Timer &timer);
 
 /*
-* Êä³ö¼ÆÊıÆ÷/¶¨Ê±Æ÷¼ÆËã½á¹û
+* è¾“å‡ºè®¡æ•°å™¨/å®šæ—¶å™¨è®¡ç®—ç»“æœ
 */
-void timer_output(Timer *timer);
+void timer_output(Timer &timer);
